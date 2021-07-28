@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="h1"><span>P</span>ierre <span>F</span>euille <span>C</span>iseaux</h1>
+  <!--GameBoard-->
+ <div class="container">
+    <div id="end"><h2></h2></div>
+    <div id="game">
+        <div id="player1">
+            <p id="p1">Je suis prêt</p>
+        </div>
+        <div id="player2">
+            <p id="p2">Tu es prêt(e) ?</p>
+        </div>
+    </div>
+    
+    <div id="global">
+        <!--Button click stone leaf cissors-->
+        <div id="select">
+            <button class="button" id="pierre">Pierre</button>
+            <button class="button" id="feuille">Feuille</button>
+            <button class="button" id="ciseaux">Ciseaux</button>
+        </div>
+        
+    </div>
+    <!--Player's points-->
+    <div id="point">
+        <div id="score1">
+            
+        </div>
+        <div id="score2">
+                
+        </div>
+    </div>
+    
+ </div>
+ <!--Propose to play again when the game is over-->
+ <div id="containerRestart">
+     
+     <div id="regame">
+        <h1 id="reset">Veux-tu jouer à nouveau ?</h1>
+        <div id="decide">
+            <button id="yes">Oui</button>
+            <button id="no">Non</button>
+            <p id="statue"></p>
+        </div>
+    </div>
+ </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,580 @@
+.container{
+    width: 100%;
+    height: 670px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px 10px silver;
+    border-radius: 10px;
+    position:relative;
+    z-index: 0;
+}
+
+#containerRestart{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position:relative;
+    bottom: 530px;
+    z-index: 10;
+    display: none;
+}
+
+#h1{
+    text-align: center;
+    background-color: rgb(85, 83, 83);
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 0 5px 0;
+}
+
+#regame{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+span{
+    color:rgb(173, 107, 22);
+}
+
+#player1{
+    height: 80%;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(169, 169, 169, 0.26);
+}
+
+#player2{
+    height: 80%;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(169, 169, 169, 0.26);
+
+
+}
+
+#game{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 80%;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+#p1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 145px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#p2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 145px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#global{
+    display: flex;
+    flex-direction: row;
+}
+
+#score1{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#score2{
+    text-align:center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#end{
+    padding-top: 10px;
+    height: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#pierre, #feuille, #ciseaux{
+    height: 60px;
+    margin: 2px;
+    width:250px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(209, 154, 83);
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#pierre:hover{
+    background-color: rgba(209, 154, 83, 0.815);
+}
+
+#feuille:hover{
+    background-color: rgba(209, 154, 83, 0.815);
+}
+
+#ciseaux:hover{
+    background-color: rgba(209, 154, 83, 0.815);
+}
+
+#select{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#point{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#score1{
+    width: 100%;
+    height: 100%;
+}
+
+#score2{
+    width: 100%;
+    height: 100%;
+
+}
+
+#yes, #no{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(85, 83, 83);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#statue{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+@media (max-width: 1250px){
+    #player1{
+        height: 90%;
+        width: 45%;
+    }
+    
+    #player2{
+        height: 90%;
+        width: 45%;
+    }
+    #p1{
+        font-size: 25px;
+        margin-top: 155px;
+    }
+    
+    #p2{
+        font-size: 25px;
+        margin-top: 155px;
+    }
+}
+
+@media (max-width: 1050px){
+    .container{
+        width: 100%;
+        height: 560px;
+    }
+    #p1{
+        font-size: 25px;
+        margin-top: 130px;
+    }
+    
+    #p2{
+        font-size: 25px;
+        margin-top: 130px;
+    }
+    #containerRestart{
+        width: 80%;
+        bottom: 480px;
+    }
+}
+
+@media (max-width: 980px) {
+    #pierre, #feuille, #ciseaux{
+        height: 50px;
+        margin: 2px;
+        width:200px;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    #containerRestart{
+        width: 80%;
+        bottom: 440px;
+    }
+    .container{
+        width: 100%;
+        height: 500px;
+    }
+    #select{
+        margin-top: 40px;
+    }
+    #p1{
+        font-size: 25px;
+        margin-top: 110px;
+    }
+    
+    #p2{
+        font-size: 25px;
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 800px) {
+    #pierre, #feuille, #ciseaux{
+        height: 40px;
+        margin: 2px;
+        width: 180px;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    #player1{
+        height: 80%;
+        width: 45%;
+        margin-top: 30px;
+    }
+    
+    #player2{
+        height: 80%;
+        width: 45%;
+        margin-top: 30px;;
+    }
+    #containerRestart{
+        width: 80%;
+        border-radius: 10px;
+        bottom: 480px;
+    }
+    .container{
+        width: 100%;
+        height: 560px;
+    }
+    #p1{
+        font-size: 25px;
+        margin-top: 120px;
+    }
+    #p2{
+        font-size: 25px;
+        margin-top: 120px;
+    }
+    #point{
+        width: 100%;
+    }
+    #select{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 710px){
+    #pierre, #feuille, #ciseaux{
+        height: 40px;
+        margin: 2px;
+        width: 150px;
+        font-size: 17px;
+        margin: 0 auto;
+    }
+    .container{
+        width: 100%;
+        height: 490px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 420px;
+    }
+    #p1{
+        font-size: 22px;
+        margin-top: 95px;
+    }
+    
+    #p2{
+        font-size: 22px;
+        margin-top: 95px;
+    }
+    #select{
+        margin-top: 10px;
+    }
+    h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 595px){
+    #pierre, #feuille, #ciseaux{
+        height: 40px;
+        margin: 2px;
+        width: 120px;
+        font-size: 17px;
+        margin: 0 auto;
+    }
+    .container{
+        width: 100%;
+        height: 500px;
+    }
+    #reset{
+        margin-bottom: 40px;
+    }
+    #p1{
+        font-size: 20px;
+        margin-top: 90px;
+    }
+    
+    #p2{
+        font-size: 20px;
+        margin-top: 90px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 430px;
+    }
+    #statue{
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    #reset{
+        font-size: 20px;
+    }
+    #player1{
+        height: 70%;
+        width: 45%;
+        margin-top: 30px;
+    }
+    
+    #player2{
+        height: 70%;
+        width: 45%;
+        margin-top: 30px;
+    }
+    #select{
+        margin-top: 0;
+    }
+    #score1, #score2{
+        font-size: 17px;
+    }
+    #h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 550px){
+    .container{
+        width: 100%;
+        height: 450px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 370px;
+    }
+    #statue{
+        margin-top: 30px;
+    }
+    #p1{
+        font-size: 20px;
+        margin-top: 80px;
+    }
+    
+    #p2{
+        font-size: 20px;
+        margin-top: 80px;
+    }
+    #select{
+        margin-top: 30px;
+    }
+    #score1, #score2{
+        font-size: 17px;
+    }
+    #select{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 475px) {
+    #pierre, #feuille, #ciseaux{
+        height: 35px;
+        margin: 2px;
+        width: 90px;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    .container{
+        width: 100%;
+        height: 420px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 360px;
+    }
+    #p1{
+        font-size: 20px;
+        margin-top: 75px;
+    }
+    
+    #p2{
+        font-size: 20px;
+        margin-top: 75px;
+    }
+    #select{
+        width: 80%;
+        margin-top: 30px;
+    }
+    #score1{
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+    }
+    
+    #score2{
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+    }
+    #select{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 430px){
+    .container{
+        width: 100%;
+        height: 380px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 330px;
+    }
+    #reset{
+        margin-bottom: 20px;
+    }
+    #p1{
+        font-size: 20px;
+        margin-top: 65px;
+    }
+    
+    #p2{
+        font-size: 20px;
+        margin-top: 65px;
+    }
+    #score1, #score2{
+        font-size: 17px;
+    }
+    
+    #select{
+        margin-top: 0;
+    }
+    #statue{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 100%;
+        height: 380px;
+    }
+    #p1{
+        font-size: 17px;
+        margin-top: 60px;
+    }
+    
+    #p2{
+        font-size: 17px;
+        margin-top: 60px;
+    }
+    
+    #player1{
+        height: 60%;
+        width: 47%;
+        margin-top: 30px;
+    }
+
+    #player2{
+        height: 60%;
+        width: 47%;
+        margin-top: 30px;
+    }
+    #select{
+        width: 80%;
+        margin-top: -20px;
+    }
+    #score1, #score2{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 320px;
+    }
+}
+
+@media (max-width: 360px){
+    #pierre, #feuille, #ciseaux{
+        width: 75px;
+        font-size: 12px;
+    }
+    #p1, #p2{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 310px){
+    #pierre, #feuille, #ciseaux{
+        width: 65px;
+        font-size: 12px;
+    }
+    #p1, #p2{
+        font-size: 13px;
+    }
+    #containerRestart{
+        width: 100%;
+        bottom: 350px;
+    }
+}
